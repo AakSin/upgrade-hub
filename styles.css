@@ -1,6 +1,6 @@
 :root {
-    --color1: rgb(20, 64, 160);
-    --color2:white;
+    --color1: rgb(199, 10, 10);
+    --color2:rgb(17, 17, 17);
 }
   }
  body,html {
@@ -17,9 +17,16 @@
 .upgrader {
     background-color: var(--color2);
 }
-.btn-primary{
+.btn-danger{
     background-color: var(--color1);
+    border-color: var(--color1);
+}
+label{
+    color: rgb(230, 230, 230);
 }
 .form-control{
     border:0px;
+}
+form{
+    width: 50%;
 }
