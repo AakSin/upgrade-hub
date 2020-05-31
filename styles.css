@@ -1,11 +1,12 @@
 :root {
-    --color1: rgb(199, 10, 10);
+    --color1: rgb(248, 74, 74);
     --color2:rgb(17, 17, 17);
 }
   }
  body,html {
     margin: 0;
     padding: 0;
+    font-size: 1rem;
 } 
 .col-sm {
     height: 100vh;
@@ -29,4 +30,26 @@ label{
 }
 form{
     width: 50%;
+}
+h1{
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+h5{
+    font-weight: 400;
+    font-size: 1rem;
+}
+p{
+    text-align: center;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html{
+        font-size: 1.5rem;
+    }
+    
 }
