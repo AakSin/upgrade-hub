@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upgrade Hub</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets\style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,19 +20,19 @@
             </div>
         
           <div class="col-sm upgrader d-flex justify-content-center align-items-center">
-            <form class="d-flex flex-column">
+            <form class="d-flex flex-column" action="/post-test" method="POST">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Enter email">
                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">16 Character Key</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="16 Character Key">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="key" placeholder="16 Character Key">
                   </div>
                 <!-- <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
