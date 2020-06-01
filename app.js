@@ -19,7 +19,11 @@ app.post('/post-test', (req, res) => {
         },
         body: JSON.stringify(req.body)
       }).then(r =>  r.json().then(data => ({status: r.status, body: data})))
-      .then(obj => res.send(obj))
+      .then(
+          obj => {
+              res.send(obj.body.message),
+              console.log(obj);
+            })
       });
 
 app.listen(port,()=>{
