@@ -9,7 +9,8 @@ app.engine('html', require('ejs').renderFile);
 app.get("/",(req, res)=>{
     res.render("index.html")
 })
-app.post('/post-test', (req, res) => {
+app.post('/', (req, res) => {
+    console.log(req.body)
     fetch('https://upgradeandchill.xyz/auto/api', {
         method: 'POST',
         headers: {
