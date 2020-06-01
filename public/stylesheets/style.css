@@ -2,7 +2,6 @@
     --color1: rgb(248, 74, 74);
     --color2:rgb(17, 17, 17);
 }
-  }
  body,html {
     margin: 0;
     padding: 0;
@@ -10,6 +9,7 @@
 } 
 .col-sm {
     height: 100vh;
+    text-align: center;
 }
 .info {
     background-color: var(--color1);
@@ -44,12 +44,43 @@ h5{
 p{
     text-align: center;
 }
+.btn-outline-dark {
+    color: var(--color2) ;
+    border-color: var(--color2) ;
+}
 
 
-/* Medium devices (landscape tablets, 768px and up) */
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {
+    html{
+        font-size:1rem;
+    }
+}
+*/
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+      
+    html{
+        font-size:1rem;
+    }
+    
+}
+ */
+/* Medium devices (landscape tablets, 768px and up)*/ 
 @media only screen and (min-width: 768px) {
+    html{
+        font-size: 1.2rem;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     html{
         font-size: 1.5rem;
     }
     
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...}*/
