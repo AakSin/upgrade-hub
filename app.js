@@ -22,6 +22,6 @@ app.post('/post-test', (req, res) => {
       .then(obj => res.send(obj))
       });
 
-app.listen(process.env.PORT,process.env.IP,function(){
+app.listen(process.env.PORT,()=>{
     console.log("The server is up and running")
 });
